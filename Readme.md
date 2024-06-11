@@ -5,39 +5,38 @@ The applications have been tested with the `RG35XXH-V1.1.0-EN16GB-240428` firmwa
 
 ## Usage
 
-The repository contains 
+The repository contains the following applications:
 - [SSH](#ssh)
 - [SetLocale](#set-locale)
 
 In order to use the applications correctly, the following steps should be followed:
 
-- insert the Anbernic destination SD card into your computer reader (the card should already have the default Anbernic folder structure in it)
-- copy the content of each application folder from the repository in the Anbernic SD card into the `Roms/APPS` folder
-- create a new `Imgs` folder in `Roms/APPS`
-- move each bash scripts (.sh files) from inside each application folders into the parent (`Roms/APPS`)
-- copy the image with suffix `_black.png` from each `Imgs` folder of each application folder into `Roms/APPS/Imgs` 
-- rename each image with the `_black.png` suffix in the `Roms/APPS/Imgs` folder to the name of the related bash script (name is case sensitive)
+- insert the Anbernic destination SD card into your computer reader, the card should already have the default Anbernic folder structure in it
+- if the SD card is brand new without any onther application installed, then copy and paste the `Roms` folder from this repository into the Anbernic SD card, the `APPS` folder should be now filled with the same files that are in the current repository
+- if the SD card already contains applications or other data, then copy the content of the `Roms/APPS` folder from the repository into the `Roms/APPS` folder in the Anbernic SD card, if promped merge the folders **(be careful; if the folders are not merged but replaced, existing data can be lost)**, `Roms/APPS/Imgs` folder requires more attention as it should already contain data
 - the SD card can be ejected now
 
-If both the applications are copied the result should be like the following:
+The result should be similar to the following:
 
 ```bash
 .
-├── Imgs
-│   ├── SSH.png
-│   └── SetLocale.png
-├── SSH
-│   └── Imgs
-│       ├── ssh_black.png
-│       ├── ssh_green.png
-│       └── ssh_red.png
-├── SSH.sh
-├── SetLocale
-│   └── Imgs
-│       ├── setlocale_black.png
-│       ├── setlocale_green.png
-│       └── setlocale_red.png
-└── SetLocale.sh
+└── Roms
+    └── APPS
+        ├── Imgs
+        │   ├── SSH.png
+        │   └── SetLocale.png
+        ├── SSH
+        │   └── Imgs
+        │       ├── ssh_black.png
+        │       ├── ssh_green.png
+        │       └── ssh_red.png
+        ├── SSH.sh
+        ├── SetLocale
+        │   └── Imgs
+        │       ├── setlocale_black.png
+        │       ├── setlocale_green.png
+        │       └── setlocale_red.png
+        └── SetLocale.sh
 ```
 
 In order to execute the scripts on the Anbernic device:
