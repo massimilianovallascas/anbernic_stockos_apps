@@ -52,7 +52,7 @@ In order to execute the scripts on the Anbernic device:
 
 ### SSH
 
-![SSH](SSH/SSH/Imgs/ssh_black.png)
+![SSH](Roms/APPS/SSH/Imgs/ssh_black.png)
 
 This application installs all the necessary packages to enable SSH server in StockOS. In order for the script to be executed correctly the `device must be connected to the Wi-Fi` and the connection should be stable.
 
@@ -70,6 +70,6 @@ Sometimes, after the console is coming back from standby or after restarting the
 
 ### Set locale
 
-![SetLocale](SetLocale/SetLocale/Imgs/setlocale_black.png)
+![SetLocale](Roms/APPS/SetLocale/Imgs/setlocale_black.png)
 
 This script changes the locale from the default one (Chinese) to **en_GB.UTF-8**.
